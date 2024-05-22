@@ -40,41 +40,19 @@
 \"googleapis.com\"\n}\n \"servers\":[\n \"1.1.1.1\"\n\n},\n \\"inbounds\":
 [\n {\n\ \"listen\": \"127.0.0.1\",\n \"port\":10808,\n \"protocol\": \"socks\",
 \"settings\":{\n\ \"auth\":\"noauth\",\n \"udp\":true,\n \"user Level\":
-\n
-8\n },\n \"sniffing\":{\n \"destOverride\":[\n \"http\",\n \"tls\"\n ],\"enabled\": true\n},\n \"tag\":\"socks\"\n},\n {\n\ \"listen\": \"127.0.0.1\",
+\n8\n },\n \"sniffing\":{\n \"destOverride\":[\n \"http\",\n \"tls\"\n ],\"enabled\": true\n},\n \"tag\":\"socks\"\n},\n {\n\ \"listen\": \"127.0.0.1\",
 \"port\":10809,\n \"protocol\": \"http\",\n \"settings\":{\n\ \"userLevel\":
-8\n },\n
-\"tag\":\"http\"\n\n_],\n\_\\"]og\":{\n\_\_\\"]oglevel\": \"warning\"\n},
+8\n },\n\"tag\":\"http\"\n\n_],\n\_\\"]og\":{\n\_\_\\"]oglevel\": \"warning\"\n},
 \n \"outbounds\":[\n {\n \"mux\":{\n \"concurrency\": 8,\n \"enabled\":
 false\n },\n \"protoco\":\"vmess\",\n \"settings\":{\n\ \"vnext\":[\n {\n
-\"address\": \"ok.kspvpn.online\",\n \"port\": 80,\n
-\\n
-\"encryption\":\"\",\n
-\"bb492ea9-1e38-4e94-b653-67c50b9d1543\",\n
-\"alter Id\":0,\n
-\"auto\"\n
-}\n
-\"network\": \"ws\",\n
-\n
-\n
-\"users\":[\n
-\"flow\":\"\",\n
-\"level\": 8,\n
-{\n
-\"id\":
-\"security\":
-]\n }\n \n \n \"streamSettings\":{\n
-\"security\":\"\",\n \"wsSettings\":{\n \"headers\":{\n
-\"Host\": \"kspyp.kspvpn.online\"\n },\n \"path\":\"\NOlxzgSt\\/\"\n }\n },
+\"address\": \"ok.kspvpn.online\",\n \"port\": 80,\n\\n\"encryption\":\"\",\n\"bb492ea9-1e38-4e94-b653-67c50b9d1543\",\n\"alter Id\":0,\n
+\"auto\"\n}\n\"network\": \"ws\",\n\n\n\"users\":[\n\"flow\":\"\",\n\"level\": 8,\n{\n\"id\":\"security\":]\n }\n \n \n \"streamSettings\":{\n
+\"security\":\"\",\n \"wsSettings\":{\n \"headers\":{\n\"Host\": \"kspyp.kspvpn.online\"\n },\n \"path\":\"\NOlxzgSt\\/\"\n }\n },
 \"tag\": \"proxy\"\n },\n {\n \"protocol\": \"freedom\",\n \"settings\":{},
 \"tag\":\"direct\"\n},\n {\n \"protoco[\": \"blackhole\",\n \"settings\":{\n\
 \"response\":{\n \"type\":\"http\"\n }\n },\n \"tag\":\"block\"\n}\n],\n
 \"routing\":{\n\"domainStrategy\": \"IPIfNonMatch\",\n \"rules\":[\n_{\n\
-\"1.1.1.1\"\n ],\n \"outboundTag\": \"proxy\",\n
-\"field\"\n
-}
-}\n \n \n}",
-\"port\":\"53\",\n
+\"1.1.1.1\"\n ],\n \"outboundTag\": \"proxy\",\n\"field\"\n}}\n \n \n}",\"port\":\"53\",\n
 "apilatamsrcv2ray": "http:W45.136.254.99:89\/val.php?token="
 "FondoLink": "By Latamsrc"
 \"ip\":[\n
