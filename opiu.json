@@ -1,107 +1,41 @@
 {
-  "dns": {
-    "hosts": {
-      "domain:googleapis.cn": "googleapis.com"
-    },
-    "servers": [
-      "1.1.1.1"
-    ]
-  },
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "userLevel": 8
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "enabled": true
-      },
-      "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "userLevel": 8
-      },
-      "tag": "http"
-    }
-  ],
-  "log": {
-    "loglevel": "warning"
-  },
-  "outbounds": [
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ok.kspvpn.online",
-            "port": 80,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "bb492ea9-1e38-4e94-b653-67c50b9d1543",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "",
-        "wsSettings": {
-          "headers": {
-            "Host": "kspyp.kspvpn.online"
-          },
-          "path": "/NO1xzgSt/"
-        }
-      },
-      "tag": "proxy"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {},
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
-      "tag": "block"
-    }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "ip": [
-          "1.1.1.1"
-        ],
-        "outboundTag": "proxy",
-        "port": "53",
-        "type": "field"
-      }
-    ]
+ "Version": "1.0.6",
+ "ReleaseNotes": "true",
+ "Servers": [
+  {
+   "Name": "hh",
+   "FLAG": "th",
+   "ServerIP": "",
+   "sPais": "",
+   "ServerPort": "",
+   "SSLPort": "",
+   "ProxyIP": "",
+   "ProxyPort": "",
+   "ServerUser": "",
+   "ServerPass": "",
+   "sInfo": "",
+   "apiCheckUser": "",
+   "apiOnlineUser": "",
+   "Payload": "",
+   "SNI": "",
+   "Slowchave": "",
+   "Nameserver": "",
+   "Slowdns": "",
+   "isSSL": "false",
+   "isInject": "false",
+   "isPayloadSSL": "false",
+   "isSlow": "false",
+   "isDirect": "false",
+   "isudp": "false",
+   "udpserver": "",
+   "udpauth": "",
+   "udpobfs": "",
+   "udpdown": "",
+   "udpup": "",
+   "udpbuffer": "",
+   "iv2ray": "true",
+   "v2rayJson": "{\n  \"dns\": {\n    \"hosts\": {\n      \"domain:googleapis.cn\": \"googleapis.com\"\n    },\n    \"servers\": [\n      \"1.1.1.1\"\n    ]\n  },\n  \"inbounds\": [\n    {\n      \"listen\": \"127.0.0.1\",\n      \"port\": 10808,\n      \"protocol\": \"socks\",\n      \"settings\": {\n        \"auth\": \"noauth\",\n        \"udp\": true,\n        \"userLevel\": 8\n      },\n      \"sniffing\": {\n        \"destOverride\": [\n          \"http\",\n          \"tls\"\n        ],\n        \"enabled\": true\n      },\n      \"tag\": \"socks\"\n    },\n    {\n      \"listen\": \"127.0.0.1\",\n      \"port\": 10809,\n      \"protocol\": \"http\",\n      \"settings\": {\n        \"userLevel\": 8\n      },\n      \"tag\": \"http\"\n    }\n  ],\n  \"log\": {\n    \"loglevel\": \"warning\"\n  },\n  \"outbounds\": [\n    {\n      \"mux\": {\n        \"concurrency\": 8,\n        \"enabled\": false\n      },\n      \"protocol\": \"vmess\",\n      \"settings\": {\n        \"vnext\": [\n          {\n            \"address\": \"ok.kspvpn.online\",\n            \"port\": 80,\n            \"users\": [\n              {\n                \"alterId\": 0,\n                \"encryption\": \"\",\n                \"flow\": \"\",\n                \"id\": \"b8b0b708-c25f-4c6d-bf3e-111c218bb00e\",\n                \"level\": 8,\n                \"security\": \"auto\"\n              }\n            ]\n          }\n        ]\n      },\n      \"streamSettings\": {\n        \"network\": \"ws\",\n        \"security\": \"\",\n        \"wsSettings\": {\n          \"headers\": {\n            \"Host\": \"my.kspvpn.online\"\n          },\n          \"path\": \"\/RrcP4EAY\/\"\n        }\n      },\n      \"tag\": \"proxy\"\n    },\n    {\n      \"protocol\": \"freedom\",\n      \"settings\": {},\n      \"tag\": \"direct\"\n    },\n    {\n      \"protocol\": \"blackhole\",\n      \"settings\": {\n        \"response\": {\n          \"type\": \"http\"\n        }\n      },\n      \"tag\": \"block\"\n    }\n  ],\n  \"routing\": {\n    \"domainStrategy\": \"IPIfNonMatch\",\n    \"rules\": [\n      {\n        \"ip\": [\n          \"1.1.1.1\"\n        ],\n        \"outboundTag\": \"proxy\",\n        \"port\": \"53\",\n        \"type\": \"field\"\n      }\n    ]\n  }\n}",
+   "apilatamsrcv2ray": "http:\/\/45.136.254.99:89\/val.php?token="
   }
+ ]
 }
